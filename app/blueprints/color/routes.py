@@ -1,21 +1,18 @@
 from flask import render_template, Blueprint
 from .import bp as color
 
-# # Hamilton inspired this line with his project.
-# color = Blueprint("color=", __name__)
-
 @color.route('/red')
 def red():
     # return render_template('red.html', title='Red')
     return "Some things are colors, like red."
 
 @color.route('/yellow')
-def blue():
+def yellow():
     # return render_template('yellow.html', title='Yellow')
     return "Some things are colors, like yellow."
 
 @color.route('/green')
-def blue():
+def green():
     # return render_template('green.html', title='Green')
     return "Some things are colors, like green."
 
@@ -25,6 +22,6 @@ def blue():
     return "Some things are colors, like blue."
 
 @color.route('/purple')
-def blue():
+def purple():
     # return render_template('purple.html', title='Purple')
     return "Some things are colors, like purple."
